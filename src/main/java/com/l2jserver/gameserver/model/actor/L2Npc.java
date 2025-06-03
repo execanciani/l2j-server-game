@@ -1024,6 +1024,7 @@ public class L2Npc extends L2Character {
 		} else {
 			WalkingManager.getInstance().onSpawn(this);
 			EventDispatcher.getInstance().notifyEventAsync(new NpcSpawn(this), this);
+			System.out.println("npc spawn id and name " + this.getId() + " " + this.getName());
 		}
 	}
 	
